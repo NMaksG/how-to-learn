@@ -95,7 +95,7 @@
 
 /*Главные проблемы в обучении*/
 .description {
-margin 0;
+  margin: 0 auto;
 }
 
 .two-columns__paragraph{
