@@ -9,16 +9,9 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*Модификатор логотип*/
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 2;
-}
-
 /*Шапка сайта*/
 .header {
+  margin: 0 auto;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -32,12 +25,21 @@
 
 /*Логотип ЯП*/
 .logo {
-height: 32px;
-width: 183px;
+  height: 32px;
+  width: 183px;
+  }
+
+/*Модификатор логотип*/
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
 }
 
 /*Заголовок*/
 .header__title {
+  margin: 0;
   width: 730px;
   font-size: 102px;
   line-height: 96px;
@@ -48,6 +50,7 @@ width: 183px;
 
 /*Подзаголовок*/
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -59,6 +62,7 @@ width: 183px;
 }
 
 .header__link {
+  margin: 0;
   color: #2f80ed;
   text-decoration: none;
 }
@@ -85,14 +89,22 @@ width: 183px;
 
 /*Основное содержимое страницы*/
 .content {
-margin: 0 auto;
-color: #000;
-}
+  margin: 0 auto;
+  color: #000;
+  }
 
 /*Главные проблемы в обучении*/
 .description {
-margin-top: 100px;
+margin 0;
 }
+
+.two-columns__paragraph{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 30px;
+  }
 
 .two-columns {
   margin: 100px auto;
@@ -102,12 +114,12 @@ margin-top: 100px;
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
-  margin: 0;
 }
 
 .two-columns__main-text {
@@ -115,23 +127,17 @@ margin-top: 100px;
   min-width: 784px;
 }
 
-.two-columns__paragraph{
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.two-columns__paragraph_indent {
-  margin-bottom: 0;
-  }
-
 .two-columns__span-accent {
+  margin: 0;
   font-size: 24px;
   line-height: 34px;
   font-weight: bold;
 }
+
+.two-columns__paragraph_last {
+  margin 0;
+  margin-bottom: 0;
+  }
 
 /*Цифры и факты*/
 .digits {
@@ -141,6 +147,7 @@ flex-direction: column;
 }
 
 .section-title {
+  margin: 0;
   width: 60%;
   font-size: 60px;
   line-height: 1.15;
@@ -149,21 +156,14 @@ flex-direction: column;
   margin: 0 auto 20px;
 }
 
-.section-title_theme_light {
-margin-top: 100px;
-}
-
 .section-subtitle {
+  margin: 0;
   width: 60%;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
-}
-
-.section-subtitle_theme_light {
-
 }
 
 /*Таблица*/
@@ -176,19 +176,9 @@ margin-top: 100px;
   flex-wrap: wrap;
 }
 
-.table_theme_light {
-  margin-bottom: 100px;
-  justify-content: space-between;
-}
-
 /*Ячейки*/
 .table__cell {
-
-}
-
-.table__cell_theme_light {
-  margin-top: 60px;
-  width: 250px;
+  margin: 0;
 }
 
 /*Заголовок ячейки*/
@@ -200,10 +190,6 @@ margin-top: 100px;
   margin-bottom: 20px;
 }
 
-.table__heading_theme_light {
-
-}
-
 /*Текст ячейки*/
 .table__text{
   margin: 0;
@@ -212,11 +198,21 @@ margin-top: 100px;
   font-weight: normal;
 }
 
-.table__text_theme_light {
-
+.section-title_theme_light {
+margin-top: 100px;
 }
 
-.table__text_p-2 {
+.table_theme_light {
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.table__cell_theme_light {
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__text_p-last {
   margin-top: 20px;
 }
 
@@ -234,6 +230,7 @@ margin-top: 100px;
 }
 
 .feynman__title {
+  margin: 0;
   font-size: 120px;
   line-height: 1.15;
   font-weight: bold;
@@ -243,6 +240,7 @@ margin-top: 100px;
 }
 
 .feynman__subtitle {
+  margin: 0;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -251,6 +249,7 @@ margin-top: 100px;
   }
 
 .feynman__link {
+  margin: 0;
   text-decoration: none;
   font-size: 36px;
   line-height: 51px;
@@ -312,34 +311,8 @@ margin-top: 100px;
   display: flex;
 }
 
-.footer__columns {
-  width: 90%;
-  margin: 60px auto 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer__column {
   display: flex;
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer__author {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: normal;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.footer__column_content_info {
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .footer__column-heading {
@@ -361,16 +334,46 @@ margin-top: 100px;
   padding-bottom: 16px;
 }
 
-.footer__column_content_social {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .footer__column-link {
+  margin: 0;
   color: #fff;
   text-decoration: none;
 }
 
 .footer__social-icon {
+  margin: 0;
+  height: 16px;
+  width: 16px;
   margin-right: 10px;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: 60px auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.footer__column_content_info {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column_content_social {
+  flex-direction: column;
+  justify-content: flex-start;
 }
