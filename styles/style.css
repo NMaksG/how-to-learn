@@ -1,3 +1,13 @@
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,6 +30,7 @@
   align-items: center;
   position: relative;
   color: #000;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -67,6 +78,11 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  opacity: .5;
+  transition: opacity 1s;
+}
+
 /*Картинка*/
 .header__main-illustration {
   height: 608px;
@@ -85,6 +101,10 @@
   position: absolute;
   top: 64px;
   right: 0;
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
 }
 
 /*Основное содержимое страницы*/
@@ -136,7 +156,129 @@
 
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
+}
+
+  /* Техники обучения */
+.techniques {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 100px;
+}
+.cards {
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards__item {
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+  width: 240px;
+}
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  margin: 60px 40px 43px;
+  padding: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.cards__title {
+  margin: 0 0 16px;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+.cards__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+}
+
+/* Видео */
+.video {
+  padding-top: 100px;
+
+}
+.video__iframes {
+  margin-top: 50px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+.video__iframe {
+  border: none;
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+/* История Барбары Оакли */
+.oakley {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding-top: 160px;
+}
+
+/*Фейнман*/
+.feynman {
+  min-height: 890px;
+  background-image: url("../images/feynman.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+}
+
+.feynman__title {
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  width: 648px;
+  margin: 100px auto 70px;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
   }
+
+.feynman__link {
+  margin: 0;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: absolute;
+  color: #2f80ed;
+  top: 50%;
+  right: 48px;
+}
+
+.feynman__link:hover {
+  opacity: .5;
+  transition: opacity 1s;
+}
 
 /*Цифры и факты*/
 .digits {
@@ -199,46 +341,75 @@
   margin-top: 20px;
 }
 
-/*Фейнман*/
-.feynman {
-  min-height: 890px;
-  background-image: url("../images/feynman.png");
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+/* Весь мир — школа */
+.khan {
   margin: 0 auto;
+  padding-top: 100px;
+  background-color: #f2f2f2;
 }
-
-.feynman__title {
-  font-size: 120px;
+.khan__container {
+  margin: 0 auto;
+  width: 80%;
+}
+.khan__author {
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0;
+  font-size: 60px;
   line-height: 1.15;
   font-weight: bold;
-  width: 648px;
-  margin: 100px auto 70px;
-  text-align: center;
+}
+.khan__quote {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  width: 790px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.khan__quote-author {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+.khan__author-subline {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 68px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: normal;
+}
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+}
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+  object-fit: cover;
+  object-position: left top;
 }
 
-.feynman__subtitle {
-  font-size: 36px;
-  line-height: 51px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0 auto;
-  }
-
-.feynman__link {
+.khan__buy-link {
   margin: 0;
   text-decoration: none;
-  font-size: 36px;
-  line-height: 51px;
+  font-size: 30px;
+  line-height: 42px;
   font-weight: normal;
-  position: absolute;
   color: #2f80ed;
-  top: 50%;
-  right: 48px;
+  margin: 0;
+}
+.khan__buy-link:hover {
+  opacity: .5;
+  transition: opacity 1s;
 }
 
 .kaufman {
@@ -283,6 +454,30 @@
   z-index: 0;
 }
 
+
+/* Полезные ресурсы */
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 0;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+.resources__logo:hover {
+  opacity: .5;
+  transition: opacity 1s;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
@@ -318,6 +513,11 @@
   margin: 0;
   color: #fff;
   text-decoration: none;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
+  transition: opacity 1s;
 }
 
 .footer__social-icon {
