@@ -1,0 +1,10 @@
+/*Логотип ЯП*/
+.logo {
+  height: 32px;
+  width: 183px;
+  }
+
+  .logo:hover {
+    opacity: .5;
+    transition: opacity 1s;
+  }

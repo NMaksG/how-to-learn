@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <div class="page">
@@ -13,7 +13,9 @@
     <!--Шапка сайта-->
     <header class="header">
       <!--Логотип ЯП-->
-      <img  class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип ЯП">
+      <a href="#">
+        <img  class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип ЯП">
+      </a>
 
       <!--Заголовок-->
       <h1 class="header__title">Научиться учиться</h1>
@@ -88,11 +90,9 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316"
-            src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen>
           </iframe>
-          <iframe class="video__iframe" width="515" height="316"
-            src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen>
           </iframe>
         </div>
       </section>
@@ -225,20 +225,16 @@
     <section class="resources">
       <h2 class="section-title">Полезные ресурсы</h2>
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <nav class="resources__logo-zone">
-        <a class="decoration-none" href="#">
-          <img class="resources__logo" src="./images/resources-arzamas.svg" alt="Ссылка arzamas">
-        </a>
-        <a class="decoration-none" href="#">
-          <img class="resources__logo" src="./images/resources-n1.svg" alt="Ссылка n1">
-        </a>
-        <a class="decoration-none" href="#">
-          <img class="resources__logo" src="./images/resources-strelka.svg" alt="Ссылка strelka">
-        </a>
-        <a class="decoration-none" href="#">
-          <img class="resources__logo" src="./images/resources-polka.svg" alt="Ссылка polka">
-        </a>
-      </nav>
+      <ul class="resources__logo-zone">
+        <li><a href="#">
+          <img class="resources__logo" src="./images/resources-arzamas.svg" alt="Ссылка arzamas"></a></li>
+        <li><a href="#">
+          <img class="resources__logo" src="./images/resources-n1.svg" alt="Ссылка n1"></a></li>
+        <li><a href="#">
+          <img class="resources__logo" src="./images/resources-strelka.svg" alt="Ссылка strelka"></a></li>
+        <li><a href="#">
+          <img class="resources__logo" src="./images/resources-polka.svg" alt="Ссылка polka"></a></li>
+      </ul>
     </section>
 
     <!--Подвал сайта-->
@@ -247,39 +243,36 @@
       <!--Лого/Автор-->
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img  class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип ЯП">
-          <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
+          <a href="#"><img  class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип ЯП"></a>
+          <p class="footer__author">&copy; 2022. Максим Найда</p>
         </div>
 
         <!--Ссылки-->
         <!--О практикуме-->
-        <div class="footer__column footer__column_content_info">
-          <h3 class="footer__column-heading">О Практикуме</h3>
-          <nav class="footer__column-links">
-            <a href="#"  class="footer__column-link">Главная</a>
-            <a href="#"  class="footer__column-link">Концепция</a>
-            <a href="#"  class="footer__column-link">Наставники</a>
+          <nav class="footer__column footer__column_content_info">
+            <h3 class="footer__column-heading">О Практикуме</h3>
+            <ul class="footer__column-links">
+              <li><a href="#" class="footer__column-link">Главная</a></li>
+              <li><a href="#" class="footer__column-link">Концепция</a></li>
+              <li><a href="#" class="footer__column-link">Наставники</a></li>
+            </ul>
           </nav>
-        </div>
 
-        <!--Соцсети-->
-        <div class="footer__column footer__column_content_social">
-          <h3 class="footer__column-heading">Соцсети</h3>
-          <nav class="footer__column-links">
-            <a href="#" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="иконка Facebook">
-              Facebook
-            </a>
-            <a href="#" class="footer__column-link">
-            <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="иконка VK">
-              ВКонтакте
-            </a>
-            <a href="#" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="иконка Instagram">
-              Instagram
-            </a>
+          <!--Соцсети-->
+          <nav class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Соцсети</h3>
+            <ul class="footer__column-links">
+              <li><a href="#" class="footer__column-link">
+                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="иконка Facebook">
+                Facebook</a></li>
+              <li><a href="#" class="footer__column-link">
+                <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="иконка VK">
+                ВКонтакте</a></li>
+              <li><a href="#" class="footer__column-link">
+                <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="иконка Instagram">
+                Instagram</a></li>
+            </ul>
           </nav>
-        </div>
       </div>
     </footer>
   </div>
