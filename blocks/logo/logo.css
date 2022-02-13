@@ -2,9 +2,9 @@
 .logo {
   height: 32px;
   width: 183px;
+  transition: opacity 1s;
   }
 
-  .logo:hover {
-    opacity: .5;
-    transition: opacity 1s;
-  }
+.logo:hover {
+  opacity: .5;
+}
