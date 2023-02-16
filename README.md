@@ -18,4 +18,4 @@
 ### *Планы по доработке*
 Cделать страницу адаптивной
 
-[Ссылка на проект](https://nmaksg.github.io/mesto)
+[Ссылка на проект](https://nmaksg.github.io/how-to-learn/)
